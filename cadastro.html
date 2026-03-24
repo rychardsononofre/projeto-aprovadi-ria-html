@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 
-<html lang= "pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title> Aprova Diária</title>
-    </head>
+<html lang="pt-br">
 
-    <body>
-        <h1>Cadastro do Servidor</h1>
-        <h2>Formulário de Cadastro</h2>
+<head>
+    <meta charset="UTF-8">
+    <title> Aprova Diária</title>
+</head>
 
-        <form>
-            <p>
-             <fieldset>  
-                <label for="cadastro_nome"> Nome Completo:</label> 
-                <input id="cadastro_nome" type="text">
+<body>
+    <h1>Cadastro do Servidor</h1>
+    <h2>Formulário de Cadastro</h2>
+
+    <form>
+        <p>
+        <fieldset>
+            <label for="cadastro_nome"> Nome Completo:</label>
+            <input id="cadastro_nome" type="text">
             </p>
             <p>
                 <label for="cadastro_cpf"> CPF:</label></label>
@@ -25,24 +26,28 @@
                 <input id="cadastro_númerofuncional" type="text">
             </p>
             <p>
+                <label for="cadastro_cargo"> Cargo:</label>
+                <input id="cadastro_cargo" type="text">
+            </p>
+            <p>
                 <label for="cadastro_setor"> Setor:</label>
                 <input id="cadastro_setor" type="text">
             </p>
             <p>
                 <label for="cadastro_órgão"> Órgão:</label>
                 <input id="cadastro_órgão" type="text">
-            </fieldset>    
+        </fieldset>
+        </p>
+        <p>
+        <fieldset>
+            <label for="cadastro_banco"> Banco:</label>
+            <input id="cadastro_banco" type="text">
+            <select>
+                <option value="">santander</option>
+                <option value="">banestes</option>
+                <option value="">nubank</option>
+            </select>
             </p>
-            <p>
-             <fieldset>     
-                <label for="cadastro_banco"> Banco:</label>
-                <input id="cadastro_banco" type="text">
-                <select>
-                    <option value="">santander</option>
-                    <option value="">banestes</option>
-                    <option value="">nubank</option>
-                </select>
-            </p> 
             <p>
                 <label for="cadastro_tipo_debanco"> Conta Corrente ou Poupança:</label>
                 <input id="cadastro_tipo_debanco" type="text">
@@ -50,15 +55,15 @@
             <p>
                 <label for="cadastro_número_daconta"> Número da Conta:</label>
                 <input id="cadastro_número_daconta" type="text">
-             </p>
+            </p>
             <p>
                 <label for="cadastro_número_da_agência"> Número da Agência:</label>
-                <input id="cadastro_número_da_agência" type="text">    
-                </p>
-                <p>
-                </fieldset>          
-            <label for="cadastro_senha">Senha:</label>
-            <input id="cadastro_senha" type="password">
+                <input id="cadastro_número_da_agência" type="text">
+            </p>
+            <p>
+        </fieldset>
+        <label for="cadastro_senha">Senha:</label>
+        <input id="cadastro_senha" type="password">
         </p>
         <p>
             <label for="cadastro_senha_confirm">Confirme a senha:</label>
@@ -68,6 +73,7 @@
             <button type="reset">Limpar</button>
             <button type="submit">Cadastrar</button>
         </p>
-        </form>
-     </body>
+    </form>
+</body>
+
 </html>
