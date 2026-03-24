@@ -48,30 +48,35 @@
                     <option value="">Corrente</option>
                     <option value="">Poupança</option>
                     </p>
+
                     <p>
-                        <label for="cadastro_numero_da_agencia"> Número da Agência:</label>
-                        <input id="cadastro_numero_da_agencia" type="text">
+                        <label for="cadastro_agencia">Número da Agência:</label>
+                        <input id="cadastro_agencia" name="agencia" type="text" inputmode="numeric"
+                            placeholder="0000-0">
                     </p>
-                    </fildest>
-                    <p class="campo-formulario">
+                    <p>
                         <label for="cadastro_numero_daconta">Número da Conta:</label>
-                        <input id="cadastro_numero_daconta" name="numero_conta" type="number" placeholder="00000-0">
+                        <input id="cadastro_numero_daconta" name="numero_conta" type="text" inputmode="numeric"
+                            placeholder="0000-0">
                     </p>
 
                     </fildest>
-                    <p>
+
         </fieldset>
-        <label for="cadastro_senha">Senha:</label>
-        <input id="cadastro_senha" type="password">
-        </p>
         <p>
-            <label for="cadastro_senha_confirm">Confirme a senha:</label>
-            <input id="cadastro_senha_confirm" type="password">
-        </p>
-        <p>
-            <button type="reset">Limpar</button>
-            <button type="submit">Cadastrar</button>
-        </p>
+        <fieldset>
+            <label for="cadastro_senha">Senha:</label>
+            <input id="cadastro_senha" type="password">
+            </p>
+            <p>
+                <label for="cadastro_senha_confirm">Confirme a senha:</label>
+                <input id="cadastro_senha_confirm" type="password">
+            </p>
+            <p>
+                <button type="reset">Limpar</button>
+                <button type="submit">Cadastrar</button>
+            </p>
+            </fidest>
     </form>
 </body>
 
