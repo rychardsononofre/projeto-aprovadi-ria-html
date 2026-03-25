@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 
-<html lang= "pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title> Aprova Diária</title>
-    </head>
+<html lang="pt-br">
 
-    <body>
-        <h1>Requisição de Diária</h1>
-        <h2>Dados do Solicitante</h2>
+<head>
+    <meta charset="UTF-8">
+    <title> Aprova Diária</title>
+</head>
 
-        <form>
+<body>
+    <h1>Requisição de Diária</h1>
+    <h2>Dados do Solicitante</h2>
+
+    <form>
+        <fieldset>
             <p>
-                <label for="nome"> Nome:</label> 
+                <label for="nome"> Nome:</label>
                 <input id="nome" type="text">
             </p>
             <p>
-                <label for="cpf"> CPF:</label></label>
-                <input id="cpf" type="text">
+                <label for="cadastro_cpf">CPF:</label>
+                <input id="cadastro_cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00">
             </p>
             <p>
                 <label for="númerofuncional"> Número Funcional:</label>
@@ -30,77 +32,89 @@
             <p>
                 <label for="órgão"> Órgão:</label>
                 <input id="órgão" type="text">
-            </p>
+        </fieldset>
+        </p>
+        <fieldest>
             <p>
                 <label for="banco"> Banco:</label>
                 <input id="banco" type="text">
-            </p> 
-            <p>
-                <label for="tipo_debanco"> Conta Corrente ou Poupança:</label>
-                <input id="tipo_debanco" type="text">
             </p>
             <p>
-                <label for="número_daconta"> Número da Conta:</label>
-                <input id="número_daconta" type="text">
-             </p>
-            <p>
-                <label for="número_da_agência"> Número da Agência:</label>
-                <input id="número_da_agência" type="text">    
+                <label for="tipo_de_conta"> Tipo de Conta:
+                    <select>
+                        <option value="">Corrente</option>
+                        <option value="">Poupança</option>
             </p>
-             <p>
-        <h2>Informações da Viagem</h2>    
-                <p>
+            <p>
+                <label for="cadastro_agencia">Número da Agência:</label>
+                <input id="cadastro_agencia" name="agencia" type="text" inputmode="numeric" placeholder="0000-0">
+        </fieldest>
+        </p>
+        <p>
+            <label for="cadastro_numero_daconta">Número da Conta:</label>
+            <input id="cadastro_numero_daconta" name="numero_conta" type="text" inputmode="numeric"
+                placeholder="0000-0">
+        </p>
+        <h2>Informações da Viagem</h2>
+        <fieldest>
+            <p>
                 <label for="motivo_da_viagem"> Motivo da Viagem:</label>
-                <input id="motivo_da_viagem" type="text">    
-            </p>     
-                <label for="periodo_data_departida"> Data de Partida:</label>
-                <input id="periodo_data_departida" type="text">    
-            </p>   
-             <p>
+                <input id="motivo_da_viagem" type="text">
+            </p>
+            <label for="periodo_data_departida"> Data de Partida:</label>
+            <input id="periodo_data_departida" type="text">
+            </p>
+            <p>
                 <label for="periodo_data_dechegada"> Data de Chegada:</label>
-                <input id="periodo_data_dechegada" type="text">    
-            </p>  
+                <input id="periodo_data_dechegada" type="text">
+            </p>
             <p>
                 <label for="periodo_hora_partida"> Hora de Partida:</label>
-                <input id="perido_hora_partida" type="text">    
-            </p>   
-             <p>
+                <input id="perido_hora_partida" type="text">
+            </p>
+            <p>
                 <label for="periodo_hora_chegada"> Hora de Chegada:</label>
-                <input id="periodo_hora_partida" type="text">    
-            </p> 
+                <input id="periodo_hora_partida" type="text">
+            </p>
             <p>
                 <label for="cidade_estado_origem"> Origem (Cidade/UF):</label>
-                <input id="cidade_estado_origem" type="text">    
-            </p>  
+                <input id="cidade_estado_origem" type="text">
+            </p>
             <p>
                 <label for="cidade_estado_destino"> Destino (Cidade/UF):</label>
-                <input id="cidade_estado_destino" type="text">    
-            </p> 
+                <input id="cidade_estado_destino" type="text">
+            </p>
             <p>
                 <label for="transporte_necessário"> Transporte:</label>
-                <input id="transporte_necessário" type="text">    
-            </p>   
-         <h2>Informações de Valores</h2>    
-                <p>
+                <input id="transporte_necessário" type="text">
+        </fieldest>
+        </p>
+        <h2>Informações de Valores</h2>
+        <fieldest>
+            <p>
                 <label for="quantidade_número_diárias"> Quantidade de Diárias:</label>
-                <input id="quantidade_número_diárias" type="text">    
-            </p>     
-                <label for="valor_diárias"> Valor/Diária:</label>
-                <input id="valor_diárias" type="text">    
-            </p>   
-             <p>
+                <input id="quantidade_número_diárias" type="text">
+            </p>
+            <label for="valor_diárias"> Valor/Diária:</label>
+            <input id="valor_diárias" type="text">
+            </p>
+            <p>
                 <label for="ajuda_de_transporte"> Ajuda de Transporte:</label>
-                <input id="ajuda_transporte" type="text">    
-            </p>  
+                <input id="ajuda_transporte" type="text">
+            </p>
             <p>
                 <label for="valor_total_a_receber"> Total a Receber:</label>
-                <input id="valor_total_a_receber" type="text">    
-            </p>  
-        <h2>Informações Complementares</h2>    
-                <p>
+                <input id="valor_total_a_receber" type="text">
+        </fieldest>
+        </p>
+        <h2>Informações Complementares</h2>
+        <fildest>
+            <p>
                 <label for="informações_justificativa"> Justificativa:</label>
-                <input id="informações_justificativa" type="text">    
-            </p>  
-        </form>     
-     </body>         
+                <input id="informações_justificativa" type="text">
+                </fieldest>
+            </p>
+    </form>
+</body>
+
 </html>
